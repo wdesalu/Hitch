@@ -7,7 +7,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
  
 ADMINS = (
-#    ('First Last', 'me@example.com'),
+    ('Adewale Desalu', 'adesalu@andrew.cmu.edu'),
 )
 MANAGERS = ADMINS
  
@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'core',
+    'hitch',
 )
 
 # A sample logging configuration. The only tangible logging
