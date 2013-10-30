@@ -1,14 +1,21 @@
 from django.http import HttpResponse
+from django.template import RequestContext, loader
+from django.shortcuts import render
+
+#from hitch.models import Driver, Client
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the hitch index.")
+	#latest_question_list = Question.objects.all().order_by('-pub_date')[:5]
+    #context = {'latest_question_list': latest_question_list}
+    #return render(request, 'polls/index.html')
+    #template = loader.get_template('hitch/index.html')
+    return render(request,'hitch/index.html')
+    #return HttpResponse("Hello, world. You're at the hitch index.")
 
-def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % hitch_driver_id)
+def client(request):
+	return render(request,'hitch/client.html')
 
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % driver_id)
+def driver(request):
+	return render(request,'hitch/driver.html')
 
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % driver_id)
+
