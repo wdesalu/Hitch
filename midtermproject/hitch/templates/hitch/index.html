@@ -1,9 +1,52 @@
-<p>
-Hi, Welcome to Hitch: A Carpooling App <br>
--------------------------------------- <br>
+<!DOCTYPE html>
+<html lang="en">
 
-Please pick your status of interest: <br>
+<head>
+	<meta charset="utf-8">
+	<title>Hitch</title>
 
+	<!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+
+	<!-- Css -->
+	<link href="../../static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/hitch.css" rel="stylesheet">
+
+	<!-- Javascript -->
+
+
+
+</head>
+
+<body>
+	<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">HITCH</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+<!--<p>
 
 <br>
 <a  href="{% url 'client' %}"><img src='/static/images/client.gif'></a>
@@ -14,3 +57,81 @@ Please pick your status of interest: <br>
 <br>
 
 </p>
+-->
+  <div class="item">
+    <img src="/static/images/navbarbg.png" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption">
+              <h1>Hitch</h1>
+              <p>Driver + Passenger = Trip with less Gas <br> Which One Are You?</p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'driver' %}" role="button">Driver</a> &nbsp; &nbsp;
+              <a class="btn btn-lg btn-secondary" href="{% url 'client' %}" role="button">Passenger</a></p>
+          </div>
+        </div>
+  </div>
+
+   <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Need a Ride? <span class="text-muted">Catch a ride nearby</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <a  href="{% url 'client' %}"><img class="featurette-image img-responsive" src="/static/images/bag.png" alt="Generic placeholder image"></a>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <a href="{% url 'driver' %}"><img class="featurette-image img-responsive" src="/static/images/car.png" alt="Generic placeholder image"></a>
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Space in your Car? <span class="text-muted">Give a friend a ride.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Split Gas Costs. <span class="text-muted">$$$.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/static/images/gas.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+	<!-- FOOTER -->
+     <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Hitch, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+     </footer>
+
+ 	</div> <!-- container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../docs-assets/js/holder.js"></script>
+</body>
+</html>
