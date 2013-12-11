@@ -1148,7 +1148,7 @@ pre code {
     width: 41.66666666666667%;
   }
   .col-sm-4 {
-    width: 33.33333333333333%;
+    width: 100%;
   }
   .col-sm-3 {
     width: 25%;
@@ -2348,8 +2348,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-quarternary {
   color: #ffffff;
-  background-color: #34495e;
-  border-color: #2c3e50;
+  background-color: #1abc9c;
+  border-color: #16a085;
 }
 
 .btn-primary:hover,

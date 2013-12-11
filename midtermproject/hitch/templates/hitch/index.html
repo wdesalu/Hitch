@@ -46,26 +46,15 @@
       </div>
   </div>
 
-<!--<p>
 
-<br>
-<a  href="{% url 'client' %}"><img src='/static/images/client.gif'></a>
-<br>
-
-<br>
-<a href="{% url 'driver' %}"><img src='/static/images/driver.png'></a>
-<br>
-
-</p>
--->
   <div class="item">
     <img src="/static/images/navbarbg.png" alt="First slide">
         <div class="container">
           <div class="carousel-caption">
               <h1>Hitch</h1>
               <p>Driver + Passenger = Trip with less Gas <br> Which One Are You?</p>
-              <p><a class="btn btn-lg btn-primary" href="{% url 'driver' %}" role="button">Driver</a> &nbsp; &nbsp;
-              <a class="btn btn-lg btn-secondary" href="{% url 'client' %}" role="button">Passenger</a></p>
+              <p><a class="btn btn-lg btn-primary btn-smlblk" href="hitch/driver" role="button">Driver</a> &nbsp; &nbsp;
+              <a class="btn btn-lg btn-secondary btn-smlblk" href="hitch/client" role="button">Passenger</a></p>
           </div>
         </div>
   </div>
@@ -83,10 +72,11 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Need a Ride? <span class="text-muted">Catch a ride nearby</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">
+            A friendly neighbor has space in their car and is going in the direction of your destination. "I can split your gas costs and give you company on the long ride"</p>
         </div>
         <div class="col-md-5">
-          <a  href="{% url 'client' %}"><img class="featurette-image img-responsive" src="/static/images/bag.png" alt="Generic placeholder image"></a>
+          <a  href="client"><img class="featurette-image img-responsive" src="/static/images/bag.png" alt="Generic placeholder image"></a>
         </div>
       </div>
 
@@ -94,26 +84,14 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <a href="{% url 'driver' %}"><img class="featurette-image img-responsive" src="/static/images/car.png" alt="Generic placeholder image"></a>
+          <a href="driver"><img class="featurette-image img-responsive" src="/static/images/car.png" alt="Generic placeholder image"></a>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Space in your Car? <span class="text-muted">Give a friend a ride.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead"> A classmate is stranded at school and can't get a ride on Megabus home for the weekend for another couple hours. "I have an extra seat in the car, and going towards Greenwich, want a ride? Its on the way."</p>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Split Gas Costs. <span class="text-muted">$$$.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/static/images/gas.png" alt="Generic placeholder image">
-        </div>
-      </div>
-
+      
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->

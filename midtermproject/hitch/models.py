@@ -2,14 +2,16 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Driver(models.Model):
-	name = models.CharField(max_length = 50)
-	email = models.EmailField(max_length = 50)
+	name = models.CharField(max_length = 200)
+	email = models.EmailField(max_length = 200)
 	client_capacity = models.IntegerField(default = 0)
 	pricepermile = models.IntegerField(default = 0)
 	bag_capacity = models.IntegerField(default = 0)
 	departure = models.DateTimeField('date published')
-	#def __unicode__(self):
-     #   return self.driver_text
+	destination = models.CharField(max_length = 200)
+	
+	def __unicode__(self):
+		return self.name
 
 class Client(models.Model):
 	name = models.CharField(max_length = 50)
@@ -18,6 +20,7 @@ class Client(models.Model):
 	destination = models.CharField(max_length = 50)
 	bags = models.IntegerField(default = 0)
 	#driver = models.ForeignKey(Driver)
-	#def __unicode__(self):  
-     #de   return self.client_text
+	
+	def __unicode__(self):
+		return self.name
 
